@@ -52,7 +52,7 @@ root.render(<Component text="Hello World"/>);
 ```
 
 Nesting Component:
-React allows us to create components of all sizes, hence the best appraoch is to create 
+- React allows us to create components of all sizes, hence the best appraoch is to create 
 components for each entity in the page and then grouping them together to form the page (view)
 ```js
 const Content = () => <h1>Hello World!</h1>;
@@ -62,12 +62,12 @@ const Page = () => <div>
 ```
 
 JSX:
-JSX stands for Javascript as XML
-Its a stricter version of HTML hence all tags should either be self closing or should have corresponding closing tag. Eg: `<br />`
-Since JSX gets converted to JS, some of the html attribute that has same name as JS keywords, are replaced. Eg: `className` instead of 'class', `htmlFor` instead of 'for' (label attribute)
+- JSX stands for Javascript as XML
+- Its a stricter version of HTML hence all tags should either be self closing or should have corresponding closing tag. Eg: `<br />`
+- Since JSX gets converted to JS, some of the html attribute that has same name as JS keywords, are replaced. Eg: `className` instead of 'class', `htmlFor` instead of 'for' (label attribute)
 
 Styling:
-Like in regular HTML, we can add styles as inline or as independent css.
+- Like in regular HTML, we can add styles as inline or as independent css.
 ```js
 // Inline
 const Content = () => (
@@ -86,10 +86,11 @@ const Content = () => (
 );
 ```
 
-Displaying data (Templating)
-JSX allows us to embed markup in JS, and using curly braces allows us to escape back into JS.
-Hence we can use it to run JS code in between markup.
-It could be variables, function calls, conditionals, looping constructs
+Displaying data inside JSX (Templating)
+- JSX allows us to embed markup in JS, and using curly braces allows us to escape back into JS.
+- Hence we can use it to run JS code in between markup.
+It could be variables, function calls, conditionals, looping constructs etc.
+- Below we use the ternary operator for if/else logic, Array.map for looping and && operator for condition check without any else condition.
 ```js
 const pptys = {
   color: 'red',
