@@ -1,0 +1,2 @@
+# Are NodeJS Modules singleton?
+
