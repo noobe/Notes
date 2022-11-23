@@ -1,0 +1,1 @@
+Ways to format a string input to a particular data type
