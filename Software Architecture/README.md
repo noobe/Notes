@@ -41,3 +41,13 @@
   3. Layered architecture - WHAT?
   4. Domain language - WHAT?
   5. Class invarients - WHAT?
+
+## STAGE 04: Object Oriented design principles to keep flexible and testable
+- Design Patterns
+- Composition over Inheritance
+- Encapsulate what varies - WHAT?
+- Program against abstraction - WHAT?
+- Hollywood principle - WHAT?
+- SOLID - WHAT?
+- DRY - WHAT?
+- YAGNI - WHAT?
