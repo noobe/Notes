@@ -22,3 +22,22 @@
 - Structured Programming
 - Functional Programming
 - Object Oriented Programming
+
+## STAGE 03: Re-Learn OOP (with Model-driven design)
+- Object Oriented Paradigm
+- 4 Primary Principles
+  1. Inheritance
+  2. Polymorphism
+  3. Abstraction
+  4. Encapsulation
+- Paradigm Features
+  1. Abstract classes
+  2. Concrete classes
+  3. Scope/Visiblity - WHAT?
+  4. Interfaces
+- Model Driven Design
+  1. Understand domain models - WHAT?
+  2. Undestand anemic models - WHAT?
+  3. Layered architecture - WHAT?
+  4. Domain language - WHAT?
+  5. Class invarients - WHAT?
