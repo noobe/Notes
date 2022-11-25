@@ -72,7 +72,13 @@
   5. Iterator
 - PoSA Pattern
 
-## STAGE 06: Architecture Styls
+## STAGE 06: Architectural Principles
+- Policy Vs Detail
+- Coupling Vs Cohesion
+- Component Principle
+- Boundaries
+
+## STAGE 07: Architecture Styls
 - Structural
   1. Component-based
   2. Monolithic
@@ -83,3 +89,5 @@
 - Distribured
   1. Client-Server
   2. Peer to Peer
+
+  ## STAGE 07: 
