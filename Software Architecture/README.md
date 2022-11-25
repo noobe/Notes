@@ -71,3 +71,15 @@
   4. Strategy
   5. Iterator
 - PoSA Pattern
+
+## STAGE 06: Architecture Styls
+- Structural
+  1. Component-based
+  2. Monolithic
+  3. Layered
+- Messaging
+  1. Event Driven
+  2. Publsih-Subscribe
+- Distribured
+  1. Client-Server
+  2. Peer to Peer
