@@ -51,3 +51,23 @@
 - SOLID - WHAT?
 - DRY - WHAT?
 - YAGNI - WHAT?
+
+## STAGE 05: Design Patterns
+- Creational
+  1. Singleton
+  2. Factories
+  3. Prototypes
+  4. Builder
+- Structural
+  1. Adpater
+  2. Bridge
+  3. Decorator
+  4. Composite
+  5. Proxy
+- Behavioural
+  1. Template
+  2. Mediator
+  3. Observer
+  4. Strategy
+  5. Iterator
+- PoSA Pattern
