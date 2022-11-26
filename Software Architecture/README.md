@@ -90,4 +90,10 @@
   1. Client-Server
   2. Peer to Peer
 
-  ## STAGE 07: 
+## STAGE 08: Architectural Patterns
+- Domain Driven Design
+- Model-View Controller
+- Blackboard Pattern
+- Microkernel
+- CQRS
+- Event Sourcing
