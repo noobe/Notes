@@ -97,3 +97,16 @@
 - Microkernel
 - CQRS
 - Event Sourcing
+
+## STAGE 09: Enterprise Patterns
+- DTOs
+- Identity Map
+- Use Case
+- Repositories
+- Mappers
+- Transaction Script
+- Commands/Queries
+- Value Object
+- Domain Models
+- Entities
+- ORMs
