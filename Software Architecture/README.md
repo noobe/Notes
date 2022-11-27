@@ -12,3 +12,12 @@
   2. Solution level: Mid level architecture. Focus on one or more appliction which fulfill a business need. Communication between multiple dev teams.
   3. Enterprise level: The highest level of architecture. Focuses on multiple solutions. High level abstract design which needs to be detailed out by solution or application architects. Communication across the organization.
 
+4. Responsibilities of an Architect
+- Requirements elicitation
+- Design and architectural decisions
+- Technical decisions
+- Documentation
+- Enforcing Standards
+- Collabrate
+- Consult and Coach team
+- Refactore and periodic improvements
