@@ -8,6 +8,7 @@
 
 3. Levels in architecture
 - Architecture can be done in several levels of abstarction:
-  1. Application level
-  2. Solution level
-  3. Enterprise level
+  1. Application level: The lowest level of architecture. Focus on one single application. Very detailed low level desgin. Communication is usually within one dev team.
+  2. Solution level: Mid level architecture. Focus on one or more appliction which fulfill a business need. Communication between multiple dev teams.
+  3. Enterprise level: The highest level of architecture. Focuses on multiple solutions. High level abstract design which needs to be detailed out by solution or application architects. Communication across the organization.
+
