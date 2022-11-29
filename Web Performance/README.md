@@ -15,3 +15,11 @@ Measuring the performance of a web application is a critical task. To understand
 11. This is followed by reflow and the repaint operations that finally renders the browser with the page content.
 
 ## Measuring Performance
+- Web performance is typically measured in time. How long does it take for various events to happen once a user tries interact with an application through the browser.
+- Events
+  1. First contentful paint
+  2. DOM content loaded
+  3. Largest contentful paint
+  4. Cumulative Layout shift
+
+- 
