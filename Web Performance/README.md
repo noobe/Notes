@@ -12,7 +12,7 @@ Measuring the performance of a web application is a critical task. To understand
 08. This may involve the server making 3rd party API calls, DB connections, other data processing algorithms before a response to the request is formualated.
 09. Once the server creates a response, it passes it back to the requester (client).
 10. On recieving the request, probably an HTML page, the browser parses the response string and constructs a DOM and a CSSOM.
-11. This is followed by reflow and the repaint operations that finally renders the browser with the page content.
+11. This is followed by the Critical Rendering Path(CRP) which involves steps like reflow and the repaint operations that finally renders the browser with the page content.
 
 ## Measuring Performance
 - Web performance is typically measured in time. How long does it take for various events to happen once a user tries interact with an application through the browser.
@@ -22,4 +22,15 @@ Measuring the performance of a web application is a critical task. To understand
   3. Largest contentful paint
   4. Cumulative Layout shift
 
-- 
+- Performance Improvements
+01. File size: Since response size determines the time taken to download it to the client, reducing the file size does have a significant impact on performance
+
+02. Non blocking download: Most HTML pages contains referances to other resources such as css, js, images, font files and setting them as deferred and asynchronous downloads makes sure that it does not block the rendering process of the reminder of the HTML page.
+
+03. Lazy loading: Not all resources are required during the initial load of a page. For example consider a long website. The content in the bottom part of the screen would be visible to a user only when he scrolls the page down, and hence the resources such as images used below can be lazy loaded when the user navigates to that part of the page.
+
+04. Pre connecting to other domains: Finding resources from a different domain involves the DNS convertion as well as the TLS handshake and hence preconnecting to those domains makes sure that the browser can setup a connection and be ready when a subsequent request to that domain is encountered.
+
+05. Virtual DOM and reconciliation: Modern front end frameworks like React and VueJS maintains a virtual DOM that finds the minimal change needed to the actual DOM so that DOM updates can be kept at minimum.
+
+06. 
