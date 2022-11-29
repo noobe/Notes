@@ -23,7 +23,7 @@ Measuring the performance of a web application is a critical task. To understand
   4. Cumulative Layout shift
 
 - Performance Improvements
-01. File size: Since response size determines the time taken to download it to the client, reducing the file size does have a significant impact on performance
+01. File size: Since response size determines the time taken to download it to the client, reducing the file size does have a significant impact on performance. This can be achieved using compression like gzip as well as minification of CSS/JS files.
 
 02. Non blocking download: Most HTML pages contains referances to other resources such as css, js, images, font files and setting them as deferred and asynchronous downloads makes sure that it does not block the rendering process of the reminder of the HTML page.
 
