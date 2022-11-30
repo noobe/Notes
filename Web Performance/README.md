@@ -38,3 +38,12 @@ Measuring the performance of a web application is a critical task. To understand
 07. UX Approaches/Debboubce & Throttling: These are techniques that help reduce the number of network requests triggered from the client so that the request happens only at certain intervals and hence free up network as well as the processing needed on subsequent success/failre of the network i/o.
 
 08. Streaming Data: Some data formats can also be brocken down into smaller chunks and send in orderly packets so that the user can be unblocked as soon as the initial set of packets are recieved by the client and the rest of the data can be fetched while the user starts using the already downloaded chunk of data.
+
+09. Rendering: CSR, SSR, CSR+SSR, Static Renderingm pre-rendering, PRPL Pattern.
+
+10. CDN
+
+- BE Performance Improvements
+01. Cacheing: Frequently requested data can be cached so that the backend can retreive it faster from a faster memory rather than fetching it from other slower leyers
+
+02. OCSP stapling, EV/DV certificates, packaging, IPv6, QUIC, HTTP/3
