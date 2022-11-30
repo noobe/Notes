@@ -16,11 +16,16 @@ Measuring the performance of a web application is a critical task. To understand
 
 ## Measuring Performance
 - Web performance is typically measured in time. How long does it take for various events to happen once a user tries interact with an application through the browser.
-- Events
-  1. First contentful paint
-  2. DOM content loaded
+- Matrix
+  1. Time to Interactive
+  2. First Input Delay
   3. Largest contentful paint
-  4. Cumulative Layout shift
+  4. Total Blocking Time
+  5. Cumulative Layout shift
+  6. Speed Index
+  7. CPU Time spent
+  8. Component Level CPU cost
+
 
 - Front End Performance Improvements
 01. File size: Since response size determines the time taken to download it to the client, reducing the file size does have a significant impact on performance. This can be achieved using compression like gzip as well as minification of CSS/JS files.
@@ -42,6 +47,12 @@ Measuring the performance of a web application is a critical task. To understand
 09. Rendering: CSR, SSR, CSR+SSR, Static Renderingm pre-rendering, PRPL Pattern.
 
 10. CDN
+
+11. WebPack/Granular Chunking
+
+12. WebPack/Tree Shaking
+
+13. Memoization
 
 - BE Performance Improvements
 01. Cacheing: Frequently requested data can be cached so that the backend can retreive it faster from a faster memory rather than fetching it from other slower leyers
