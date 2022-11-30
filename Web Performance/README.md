@@ -11,8 +11,8 @@ Measuring the performance of a web application is a critical task. To understand
 07. On recieving the request, the server then process the request after checking the authentication/autherization of the requester.
 08. This may involve the server making 3rd party API calls, DB connections, other data processing algorithms before a response to the request is formualated.
 09. Once the server creates a response, it passes it back to the requester (client).
-10. On recieving the request, probably an HTML page, the browser parses the response string and constructs a DOM and a CSSOM.
-11. This is followed by the Critical Rendering Path(CRP) which involves steps like reflow and the repaint operations that finally renders the browser with the page content.
+10. On recieving the request, probably an HTML page, the browser parses the response string.
+11. This is followed by the Critical Rendering Path(CRP) which involves steps like constructing a DOM and a CSSOM and then a Render Tree that combines both, creating the layout and the paint operation that finally renders the browser with the page content.
 
 ## Measuring Performance
 - Web performance is typically measured in time. How long does it take for various events to happen once a user tries interact with an application through the browser.
@@ -22,7 +22,7 @@ Measuring the performance of a web application is a critical task. To understand
   3. Largest contentful paint
   4. Cumulative Layout shift
 
-- Performance Improvements
+- Front End Performance Improvements
 01. File size: Since response size determines the time taken to download it to the client, reducing the file size does have a significant impact on performance. This can be achieved using compression like gzip as well as minification of CSS/JS files.
 
 02. Non blocking download: Most HTML pages contains referances to other resources such as css, js, images, font files and setting them as deferred and asynchronous downloads makes sure that it does not block the rendering process of the reminder of the HTML page.
@@ -33,4 +33,8 @@ Measuring the performance of a web application is a critical task. To understand
 
 05. Virtual DOM and reconciliation: Modern front end frameworks like React and VueJS maintains a virtual DOM that finds the minimal change needed to the actual DOM so that DOM updates can be kept at minimum.
 
-06. 
+06. UX Approaches/Pagination: This technique involves breaking down large data set into smaller ones that can be loaded in small numbers on user request.
+
+07. UX Approaches/Debboubce & Throttling: These are techniques that help reduce the number of network requests triggered from the client so that the request happens only at certain intervals and hence free up network as well as the processing needed on subsequent success/failre of the network i/o.
+
+08. Streaming Data: Some data formats can also be brocken down into smaller chunks and send in orderly packets so that the user can be unblocked as soon as the initial set of packets are recieved by the client and the rest of the data can be fetched while the user starts using the already downloaded chunk of data.
