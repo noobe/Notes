@@ -2,7 +2,7 @@
 Measuring the performance of a web application is a critical task. To understand the various bottlenecks that factor into performance of a web application, we need to understand the various steps involved in how an application loads.
 
 ## Loading a resource from a web app involves the following steps:
-01. IUser types in the url in the browser.
+01. User types in the url in the browser.
 02. The browser checks if there is an local Domain to IP mapping for the requested url domain in system or if there is any cached info about the same.
 03. If the corresponding IP is not found, the request goes to the ISP which inturn checks with multiple levels of DNS to figure it out.
 04. Once the IP address is found the browser then initiates a connection request to the server system.
@@ -13,6 +13,8 @@ Measuring the performance of a web application is a critical task. To understand
 09. Once the server creates a response, it passes it back to the requester (client).
 10. On recieving the request, probably an HTML page, the browser parses the response string.
 11. This is followed by the Critical Rendering Path(CRP) which involves steps like constructing a DOM and a CSSOM and then a Render Tree that combines both, creating the layout and the paint operation that finally renders the browser with the page content.
+12. Web Workers
+13. Web Socket communication
 
 ## Measuring Performance
 - Web performance is typically measured in time. How long does it take for various events to happen once a user tries interact with an application through the browser.
@@ -58,3 +60,5 @@ Measuring the performance of a web application is a critical task. To understand
 01. Cacheing: Frequently requested data can be cached so that the backend can retreive it faster from a faster memory rather than fetching it from other slower leyers
 
 02. OCSP stapling, EV/DV certificates, packaging, IPv6, QUIC, HTTP/3
+
+03. TCP Vs UDP
