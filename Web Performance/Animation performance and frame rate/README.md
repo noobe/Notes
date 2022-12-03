@@ -30,4 +30,13 @@
   2. Layout: next, the browser uses the computed styles to figure out the position and geometry for the elements. This operation is labeled "layout" but is also sometimes called "reflow".
   3. Paint: finally, the browser needs to repaint the elements to the screen. One last step is not shown in this sequence: the page may be split into layers, which are painted independently and then combined in a process called "Composition".
 
-  
+  This sequence needs to fit into a single frame, since the screen isn't updated until it is complete.
+
+- Both CSS transitions and animations can be used to write animation. They each have their own user scenarios.
+
+- CSS transitions provide an easy way to make animations occur between the current style and an end CSS state, e.g., a resting button state and a hover state. Even if an element is in the middle of a transition, the new transition starts from the current style immediately instead of jumping to the end CSS state.
+
+- CSS animations, on the other hand, allow developers to make animations between a set of starting property values and a final set rather than between two states. CSS animations consist of two components: a style describing the CSS animation, and a set of key frames that indicate the start and end states of the animation's style, as well as possible intermediate points.
+
+- JS Animation | requestAnimationFrame: API provides an efficient way to make animations in JavaScript. The callback function of the method is called by the browser before the next repaint on each frame. Compared to setTimeout()/setInterval(), which need a specific delay parameter, requestAnimationFrame() is much more efficient. Developers can create an animation by changing an element's style each time the loop is called (or updating the Canvas draw, or whatever.) 
+
