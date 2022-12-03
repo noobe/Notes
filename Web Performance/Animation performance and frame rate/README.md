@@ -40,3 +40,7 @@
 
 - JS Animation | requestAnimationFrame: API provides an efficient way to make animations in JavaScript. The callback function of the method is called by the browser before the next repaint on each frame. Compared to setTimeout()/setInterval(), which need a specific delay parameter, requestAnimationFrame() is much more efficient. Developers can create an animation by changing an element's style each time the loop is called (or updating the Canvas draw, or whatever.) 
 
+- Performance comparison: transitions vs. requestAnimationFrame
+In most cases, the performance of CSS-based animations is almost the same as JavaScripted animations.
+
+- CSS transitions/animations are resampling element styles in the main UI thread before each repaint event happens, which is almost the same as resampling element styles via a requestAnimationFrame() callback, also triggered before the next repaint. If both animations are made in the main UI thread, there is no difference performance-wise.
