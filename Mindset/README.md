@@ -1,0 +1,2 @@
+The Imposter:
+The journey of a software engineer is that of constant learning. The ones that sticks on to the grind are the ones that can constantly evolve and re-invent. This is a very difficult process as we tend to judge ourselve too harshly more often. We end up finding out confort zones where we feel secure, or hiding away our learning process so that we dont project ourselves as ignorant in public. The key to staying relavant may infact be just the opposite of the same. Explore possiblities that challange you out of your confort zone and to try and learn publically.
